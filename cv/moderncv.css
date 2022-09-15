@@ -1,0 +1,87 @@
+body{
+    background-color:#A77979 ;
+    font-family: Arial Narrow;
+    list-style: none;
+}
+img{
+    border-radius: 50%;
+}
+
+.skill{
+    width: 500px;
+    margin:40px auto;
+    color:#4C0033;
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(253, 43, 218, 0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.skill li{
+    margin:10px 0;
+    padding: 5px;
+}
+.bar{
+    background-color: rgb(255, 145, 240);
+    display: block;
+    height: 15px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(197, 127, 220, 0.12),0 1px 2px rgba(255, 158, 247, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.box:hover{
+    box-shadow: 0 14px 28px hsla(0, 0%, 0%, 0.689);
+}
+.bar span{
+    height: 15px;
+    float: left;
+    background: linear-gradient(135deg,rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+}
+.html{
+    width:90%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.javascript{
+    width: 90%;
+    animation: javascript 3s;
+}
+.python{
+    width: 30%;
+    animation: python 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
